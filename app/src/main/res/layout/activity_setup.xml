@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetupActivity">
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setup_profile_image"
+        android:layout_width="185dp"
+        android:layout_height="164dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/profile" />
+
+    <EditText
+        android:layout_below="@+id/setup_profile_image"
+        android:id="@+id/setup_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+       android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bt_uiborderrr"
+        android:drawableLeft="@drawable/username"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textMultiLine"
+        android:padding="14dp" />
+
+    <EditText
+        android:id="@+id/setup_full_name"
+        android:layout_below="@+id/setup_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bt_uiborderrr"
+        android:drawableLeft="@drawable/name"
+        android:ems="10"
+        android:hint="full name"
+        android:inputType="textMultiLine"
+        android:padding="14dp" />
+
+    <EditText
+        android:id="@+id/setup_country_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setup_full_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bt_uiborderrr"
+        android:drawableLeft="@drawable/country"
+        android:ems="10"
+        android:hint="Country"
+        android:inputType="textMultiLine"
+        android:padding="14dp" />
+
+    <Button
+        android:id="@+id/setup_information_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+     android:layout_below="@+id/setup_country_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bt_uisquare"
+        android:padding="14dp"
+        android:text="Save"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
